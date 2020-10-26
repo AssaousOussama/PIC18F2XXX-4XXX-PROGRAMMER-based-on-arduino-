@@ -27,7 +27,7 @@ this is a PIC18F2XXX/4XXX  programmer using arduino UNO and a simple Windows con
 
 
 |    pin name   | pin name  | pin type |  pin Description       |            Arduino UNO pins           |
-|---------------|-----------|----------|-:---------------------:-|---------------------------------------|
+|---------------|-----------|----------|:---:|---------------------------------------|
 | MCCRL/Vpp/RE3 |   VPP     |     P    | Programming Enable     | connected to  pin 2 on Arduino UNO   |
 |      VDD      |   VDD     |     P    | Power Supply           | connected to pin 5V on Arduino UNO  |
 |      VSS      |   VSS     |     P    | Ground                 | connected to pin GND on Arduino UNO |
