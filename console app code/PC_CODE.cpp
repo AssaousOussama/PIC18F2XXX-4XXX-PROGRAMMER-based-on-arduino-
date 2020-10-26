@@ -345,7 +345,7 @@ bool deviceSerch()
 {
     bool portstat = false;
     int portnum = 0;
-    cout << ">> serching for device ..." << endl<<endl;
+    cout << ">> searching for device ..." << endl<<endl;
 
     while (!portstat)
     {
