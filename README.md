@@ -27,7 +27,7 @@ notice : The programmer use the LVP mode to program the PIC18F
 
 
 | pin name      |              During Programming               |                                       |
-|---------------|-----------|----------|------------------------|---------------------------------------|
+|               |           |          |                        |                                       |
 |               | pin name  | pin type |  pin Description       |            Arduino UNO pins           |
 |---------------|-----------|----------|----------------------- |---------------------------------------|
 | MCCRL/Vpp/RE3 |   VPP     |     P    | Programming Enable     | connected with pin 2 on Arduino UNO   |
