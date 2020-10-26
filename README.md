@@ -19,3 +19,18 @@ this is a PIC18F2XXX/4XXX  programmer using arduino UNO and a simple Windows con
 • PIC18F2525    • PIC18F4455    • PIC18F4682  
 • PIC18F2550    • PIC18F4458    • PIC18F4685  
 • PIC18F2553  
+
+# pin connection 
+
+notice : The programmer use the LVP mode to program the PIC18F
+
+| pin name      |              During Programming              |
+|               |----------------------------------------------|---------------------------------------|
+|               | pin name | pin type |  pin Description       |            Arduino UNO pins           |
+|--------------------------------------------------------------|---------------------------------------|
+| MCCRL/Vpp/RE3 |   VPP     |    P    | Programming Enable     | connected with pin 2 on Arduino UNO   |
+|      VDD      |   VDD     |    P    | Power Supply           | connected with pin 5V on Arduino UNO  |
+|      VSS      |   VSS     |    P    | Ground                 | connected with pin GND on Arduino UNO |
+|      RB5      |   PGM     |    I    | Low_Voltage ICSP input | connected with pin 5 on Arduino UNO   |
+|      RB6      |   PGC     |    I    | Serial Clock           | connected with pin 4 on Arduino UNO   |
+|      RB7      |   PGD     |   I/O   | Serial Data            | connected with pin 3 on Arduino UNO   |
