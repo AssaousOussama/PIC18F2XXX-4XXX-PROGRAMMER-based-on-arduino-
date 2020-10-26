@@ -23,6 +23,10 @@ this is a PIC18F2XXX/4XXX  programmer using arduino UNO and a simple Windows con
 # pin connection 
 
 notice : The programmer use the LVP mode to program the PIC18F
+| hello | ther |
+|--------------|
+| ouss  | nice |
+
 
 | pin name      |              During Programming              |
 |               |----------------------------------------------|---------------------------------------|
@@ -34,3 +38,4 @@ notice : The programmer use the LVP mode to program the PIC18F
 |      RB5      |   PGM     |    I    | Low_Voltage ICSP input | connected with pin 5 on Arduino UNO   |
 |      RB6      |   PGC     |    I    | Serial Clock           | connected with pin 4 on Arduino UNO   |
 |      RB7      |   PGD     |   I/O   | Serial Data            | connected with pin 3 on Arduino UNO   |
+
