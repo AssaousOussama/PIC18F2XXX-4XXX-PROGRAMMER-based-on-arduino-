@@ -39,6 +39,14 @@ with a nice progress bar showing up , after the programmer finish programming a 
 |      RB7      |   PGD     |    I/O   | Serial Data            | connected to pin 3 on Arduino UNO     |
 
 
+for more details on PIC18 memory programming  read the **Flash Microcontroller Programming Specification  (by microchip)** found on **PIC18F_EEPROM** pdf file 
+
+
+# programmer testing 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b8vQ04u813Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 
 
