@@ -27,13 +27,13 @@ this is a PIC18F2XXX/4XXX  programmer using arduino UNO and a simple Windows con
 
 
 |    pin name   | pin name  | pin type |  pin Description       |            Arduino UNO pins           |
-|---------------|-----------|----------|:---:|---------------------------------------|
-| MCCRL/Vpp/RE3 |   VPP     |     P    | Programming Enable     | connected to  pin 2 on Arduino UNO   |
-|      VDD      |   VDD     |     P    | Power Supply           | connected to pin 5V on Arduino UNO  |
-|      VSS      |   VSS     |     P    | Ground                 | connected to pin GND on Arduino UNO |
-|      RB5      |   PGM     |     I    | Low_Voltage ICSP input | connected to pin 5 on Arduino UNO   |
-|      RB6      |   PGC     |     I    | Serial Clock           | connected to pin 4 on Arduino UNO   |
-|      RB7      |   PGD     |    I/O   | Serial Data            | connected to pin 3 on Arduino UNO   |
+|:---:|:---:|:---:|           :---:        |                 :---:                 |
+| MCCRL/Vpp/RE3 |   VPP     |     P    | Programming Enable     | connected to  pin 2 on Arduino UNO    |
+|      VDD      |   VDD     |     P    | Power Supply           | connected to pin 5V on Arduino UNO    |
+|      VSS      |   VSS     |     P    | Ground                 | connected to pin GND on Arduino UNO   |
+|      RB5      |   PGM     |     I    | Low_Voltage ICSP input | connected to pin 5 on Arduino UNO     |
+|      RB6      |   PGC     |     I    | Serial Clock           | connected to pin 4 on Arduino UNO     |
+|      RB7      |   PGD     |    I/O   | Serial Data            | connected to pin 3 on Arduino UNO     |
 
 
 
