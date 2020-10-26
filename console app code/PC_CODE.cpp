@@ -82,7 +82,6 @@ int      blockprog = 0;
 int      block[3072];
 int      blocknum=0;
 int      blockpoint=0;
-float    memused;
 
 
 ///************************************************************///
