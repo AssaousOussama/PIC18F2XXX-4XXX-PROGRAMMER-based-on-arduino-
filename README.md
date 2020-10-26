@@ -24,7 +24,7 @@ this is a PIC18F2XXX/4XXX  programmer using arduino UNO and a simple Windows con
 
 notice : The programmer use the LVP mode to program the PIC18F
 
-&nbsp;**pin** name&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;**During Programming**                                          
+&nbsp;**pin name**&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;**During Programming**                                          
 
 
 |    pin name   | pin name  | pin type |  pin Description       |            Arduino UNO pins           |
