@@ -26,14 +26,18 @@ notice : The programmer use the LVP mode to program the PIC18F
 
 
 
-| pin name      |              During Programming               |                                       |
-|---------------|----------------------|------------------------|---------------------------------------|
-|               | pin name  | pin type |  pin Description       |            Arduino UNO pins           |
+
+|    pin name   | pin name  | pin type |  pin Description       |            Arduino UNO pins           |
+|---------------|-----------|----------|------------------------|---------------------------------------|
 | MCCRL/Vpp/RE3 |   VPP     |     P    | Programming Enable     | connected with pin 2 on Arduino UNO   |
 |      VDD      |   VDD     |     P    | Power Supply           | connected with pin 5V on Arduino UNO  |
 |      VSS      |   VSS     |     P    | Ground                 | connected with pin GND on Arduino UNO |
 |      RB5      |   PGM     |     I    | Low_Voltage ICSP input | connected with pin 5 on Arduino UNO   |
 |      RB6      |   PGC     |     I    | Serial Clock           | connected with pin 4 on Arduino UNO   |
 |      RB7      |   PGD     |    I/O   | Serial Data            | connected with pin 3 on Arduino UNO   |
+
+
+
+
 
 
