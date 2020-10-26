@@ -3,7 +3,7 @@ this is a PIC18F2XXX/4XXX  programmer using arduino UNO and a simple Windows con
 
 # list of supported PIC devices 
 
-• PIC18F2221    • PIC18F2580    • PIC18F4480  
+• PIC18F2221     • PIC18F2580     • PIC18F4480  
 • PIC18F2321    • PIC18F2585    • PIC18F4510  
 • PIC18F2410    • PIC18F2610    • PIC18F4515  
 • PIC18F2420    • PIC18F2620    • PIC18F4520  
