@@ -291,7 +291,7 @@ bool readFile()
 
 ///************************************************************///
 ///               FUNCTION : sendData()                        ///
-///     OUTPUT :  to the arduino to be programed on PIC        ///
+///  OUTPUT : send data to the arduino to be programed on PIC  ///
 ///************************************************************///
 void sendData()
 {
@@ -339,7 +339,7 @@ void sendData()
 
 ///************************************************************///
 ///                FUNCTION : deviceSerch()                    ///
-///          OUTPUT  : serching for device COM PORT            ///     
+///          OUTPUT  : searching for device COM PORT           ///     
 ///************************************************************///
 bool deviceSerch()
 {
@@ -463,7 +463,7 @@ bool sendProgData()
     buffer[0] = 'P';
     buffer[1] = 'R';
     buffer[2] = 'O';
-   // buffer[3] = 'G';
+  
 
     j = 0;
     int loc = 0;
@@ -710,8 +710,8 @@ void stopPrograming()
 
 ///***********************************************************///
 ///                                                           ///
-///            FUNCTION : hex_to_dec(string str1)             ///
-///                   convert HEX value to DEC                ///
+///              FUNCTION : hex_to_dec(string )               ///
+///             OUTPUT : convert HEX value to DEC             ///
 ///                                                           ///
 ///***********************************************************///
 int hex_to_dec(string str1)
@@ -798,7 +798,7 @@ int hex_to_dec(string str1)
 
 ///***********************************************************///
 ///                                                           ///
-///           FUNCTION : dec_to_hex(int num4)                 ///
+///              FUNCTION : dec_to_hex(int )                  ///
 ///        OUTPUT : convert int  value to  DEC to hex         ///
 ///                                                           ///
 ///***********************************************************///
