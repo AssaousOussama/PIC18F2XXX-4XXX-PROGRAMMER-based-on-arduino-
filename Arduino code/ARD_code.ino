@@ -20,7 +20,6 @@
 
 
 char instBuffer,bitselect,comp;
-char globalBuffer[100];
 int bitnumbr;
 char buffin[100];
 int i,j,k,p,z,addr,addrh,data;
@@ -52,7 +51,7 @@ void setup() {
   digitalWrite(PGC,LOW);
   digitalWrite(PGD,LOW);
   
-  Serial.begin(57600);//9600  //57600
+  Serial.begin(57600);
 
 }
 
@@ -61,7 +60,7 @@ void loop() {
 i=0;
 
 
- if(Serial.available()  == 38 )  //38
+ if(Serial.available()  == 38 ) 
  {
   
    num = Serial.available();
