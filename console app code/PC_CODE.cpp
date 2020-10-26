@@ -63,10 +63,10 @@ int      point1 = 0;
 int      point2 = 0;
 int      point3 = 0;
 
-char     progData[98304];//progData[32768];
+char     progData[98304];
 char     configData[14];
 char     idData[8];
-char     eepromData[1024]; //eepromData[256];
+char     eepromData[1024];
 
 char     resp[4];
 bool     endfile = false;
@@ -79,7 +79,7 @@ int      p = 0;
 int      blockselect = 0;
 int      bytenum=0;
 int      blockprog = 0;
-int      block[3072];//block[1024];
+int      block[3072];
 int      blocknum=0;
 int      blockpoint=0;
 float    memused;
@@ -135,7 +135,7 @@ bool readFile()
             case 0:
             {
                 if (realAdress == 0x200000)
-                { // id bits
+                { //------------------------------- id bits------------------------------------
                     
                     for (i = 9; i <= 24; i = i + 2)
                     {
@@ -149,7 +149,7 @@ bool readFile()
 
                 }
                 else if (realAdress == 0x300000)
-                { // configuration bits
+                { //------------------------- configuration bits------------------------------
                    
                     for (i = 9; i <= 36; i = i + 2)
                     {
@@ -162,7 +162,7 @@ bool readFile()
                    
                 }
                 else if (realAdress == 0xF00000)
-                { // EEPROM memory 
+                { // ----------------------------EEPROM memory------------------------------- 
 
                     eepromE = true;
                     val = line[1];
@@ -183,7 +183,7 @@ bool readFile()
 
                 }
                 else 
-                { // program memory 
+                { // ---------------------------program memory ---------------------------
                 val = line[3];
                 val += line[4];
                 val += line[5];
@@ -276,17 +276,12 @@ bool readFile()
 
     myfile.close();
 
-   
-    //memused = ((bytenum * 100.0) / 32768.0);
     
     for (i = 0; i < 3072; i++)
     {
         if(block[i]) blocknum++;
     }
 
-   
-  //  memused = ((bytenum * 100.0) / 32768.0);
-  //  cout << ">> program size  : " << bytenum << " byte (using " << setprecision(3) << memused << " % of memory space )  32k device" << endl;
 
     return true;
 }
@@ -302,26 +297,21 @@ void sendData()
 {
 
      //-----------------------------COM PORT CONFIG -----------------------------------------
- //    DCB dcbSerialParams = { 0 }; // Initializing DCB structure
+ 
      dcbSerialParams.DCBlength = sizeof(dcbSerialParams); 
-     dcbSerialParams.BaudRate = CBR_57600;  // Setting BaudRate = 9600  CBR_9600;   CBR_57600;
+     dcbSerialParams.BaudRate = CBR_57600;  // Setting BaudRate = 57600
      dcbSerialParams.ByteSize = 8;         // Setting ByteSize = 8
      dcbSerialParams.StopBits = ONESTOPBIT;// Setting StopBits = 1
      dcbSerialParams.Parity = NOPARITY;  // Setting Parity = None
 
  
-   //  COMMTIMEOUTS timeouts = { 0 };
+   
      timeouts.ReadIntervalTimeout = 50; // in milliseconds
      timeouts.ReadTotalTimeoutConstant = 50; // in milliseconds 50
      timeouts.ReadTotalTimeoutMultiplier = 50; // in milliseconds 50
      timeouts.WriteTotalTimeoutConstant = 50; // in milliseconds
      timeouts.WriteTotalTimeoutMultiplier = 10; // in milliseconds
      //--------------------------------------------------------------------------------------
-
-     //SetCommState(hComm, &dcbSerialParams);
-     //SetCommTimeouts(hComm, &timeouts);
-     //SetCommMask(hComm, EV_RXCHAR);
-
 
     
      if (!deviceSerch()) return;
@@ -418,7 +408,6 @@ bool deviceSerch()
             }
             else
             {
-              //  cout << "hello";
                 CloseHandle(hComm); //Closing the Serial Port
 
                 portnum++;
@@ -544,7 +533,7 @@ bool sendProgData()
         }
 
 
-        if (blockselect == 3071) endbuffer = true;//if (blockselect == 1023) endbuffer = true;  3072
+        if (blockselect == 3071) endbuffer = true;
         else  blockselect++;
 
     }
@@ -616,13 +605,13 @@ bool sendEepromByte()
         p = 0;
         endbuffer = false;
 
-        while(!endbuffer) // for (j = 0; j < 256; j += 32)
+        while(!endbuffer) 
         {
             val = dec_to_hex(p);
-            val1 = val[2];//val1 = val[0];
-            val1 += val[3];//val1 += val[1];
-            val2 = val[4];//val2 = val[2];
-            val2 += val[5];//val2 += val[3];
+            val1 = val[2];
+            val1 += val[3];
+            val2 = val[4];
+            val2 += val[5];
             buffer[4] = hex_to_dec(val1);
             buffer[5] = hex_to_dec(val2);
 
@@ -810,7 +799,7 @@ int hex_to_dec(string str1)
 ///***********************************************************///
 ///                                                           ///
 ///           FUNCTION : dec_to_hex(int num4)                 ///
-///        OUTPUT : convert value to  DEC to hex              ///
+///        OUTPUT : convert int  value to  DEC to hex         ///
 ///                                                           ///
 ///***********************************************************///
 string dec_to_hex(int num4)
@@ -835,7 +824,7 @@ string dec_to_hex(int num4)
             num4 = num4 / 16;
         }
 
-        for (ji = 5; ji >= 0; ji--)//for (ji = 3; ji >= 0; ji--)
+        for (ji = 5; ji >= 0; ji--)
         {
             switch (num5[ji])
             {
