@@ -153,7 +153,7 @@ void endprog()
 
 ///***************************************************///
 ///            FUNCTION : EraseDevice()               ///
-///      OUTPUT : erase the holl device memory        ///
+///      OUTPUT : erase the whole  device memory      ///
 ///***************************************************///
 void EraseDevice()
 {
@@ -165,7 +165,7 @@ void EraseDevice()
 
 ///***************************************************///
 ///               FUNCTION : program()                ///
-///        OUTPUT : program the memory program        ///
+///        OUTPUT : program the  program   memory     ///
 ///***************************************************///
 void program()
 {
